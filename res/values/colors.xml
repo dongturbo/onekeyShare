@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="text_white_shadow_color">#ff5a9487</color>  -->
+    <color name="white">#ffffffff</color>
+    <color name="sm_bg">#ff333332</color>
+    <color name="text_white_shadow_color">#ff5a9487</color>
+     <color name="none_color">#00000000</color>
+    <color name="bule_overlay">#660D92DD</color>
+</resources>

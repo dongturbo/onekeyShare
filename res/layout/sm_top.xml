@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+<!-- 头像 -->
+        <com.xcz1899.onekey.view.RoundedImageView
+            android:id="@+id/riv_sm_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25.0dip"
+            android:adjustViewBounds="true"
+            android:maxHeight="80dip"
+            android:maxWidth="80dip"/>
+<!-- 名称 -->
+        <TextView
+            android:id="@+id/tv_sm_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10.0dip"
+            android:textColor="#ffccccc6"
+            android:textSize="16.0sp" />
+<!-- 设置空白高度 --> 
+        <TextView
+            android:id="@+id/tv_sm_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5dip"
+            android:textColor="#ffa8a8a3"
+            android:textSize="12.0sp" /> 
+
+</LinearLayout>

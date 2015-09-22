@@ -1,0 +1,358 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/main_top"
+        android:layout_alignParentTop="true"
+        layout="@layout/main_top"
+        android:focusable="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/main_top" >
+
+        <!-- 第1行 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_main_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp" >
+
+            <!-- 我要提问 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/search2" />
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_search"
+                    android:layout_centerHorizontal="true"
+                    android:text="我要搜索" />
+            </RelativeLayout>
+
+            <!-- 我要上传 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_upload"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:id="@+id/iv_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/upload2" />
+
+                <TextView
+                    android:id="@+id/tv_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_upload"
+                    android:layout_centerHorizontal="true"
+                    android:text="我要上传" />
+            </RelativeLayout>
+
+            <!-- 我要提问 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_ask_question"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/iv_ask_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ask_question" />
+
+                <TextView
+                    android:id="@+id/tv_ask_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_ask_question"
+                    android:layout_centerHorizontal="true"
+                    android:text="我要提问" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!-- 第1行结束 -->
+        <!-- 第2行 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_main_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_main_1"
+            android:layout_marginTop="20dp" >
+
+            <!-- 最新植物 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_recent_upload"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/iv_recent_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/recent_upload" />
+
+                <TextView
+                    android:id="@+id/tv_recent_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_recent_upload"
+                    android:layout_centerHorizontal="true"
+                    android:text="最新植物" />
+            </RelativeLayout>
+
+            <!-- 热门植物 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_hot_collect"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:id="@+id/iv_hot_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/hot_collect" />
+
+                <TextView
+                    android:id="@+id/tv_hot_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_hot_collect"
+                    android:layout_centerHorizontal="true"
+                    android:text="热门植物" />
+            </RelativeLayout>
+
+            <!-- 金币兑换 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_exchange"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/iv_exchange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/exchange" />
+
+                <TextView
+                    android:id="@+id/tv_exchange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_exchange"
+                    android:layout_centerHorizontal="true"
+                    android:text="金币兑换" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!-- 第2行结束 -->
+        <!-- 第3行 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_main_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_main_2"
+            android:layout_marginTop="20dp" >
+
+            <!-- 最新问题 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_recent_question"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/iv_recent_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/recent_question" />
+
+                <TextView
+                    android:id="@+id/tv_recent_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_recent_question"
+                    android:layout_centerHorizontal="true"
+                    android:text="最新问题" />
+            </RelativeLayout>
+
+            <!-- 热门问题 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_hot_question"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:id="@+id/iv_hot_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/hot_question" />
+
+                <TextView
+                    android:id="@+id/tv_hot_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_hot_question"
+                    android:layout_centerHorizontal="true"
+                    android:text="热门问题" />
+            </RelativeLayout>
+
+            <!-- 金币充值 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_recharge"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/iv_recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/recharge" />
+
+                <TextView
+                    android:id="@+id/tv_recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_recharge"
+                    android:layout_centerHorizontal="true"
+                    android:text="金币充值" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!-- 第3行结束 -->
+        <!-- 第4行 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_main_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_main_3"
+            android:layout_marginTop="20dp" >
+
+            <!-- 系统设置 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_setting"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/setting" />
+
+                <TextView
+                    android:id="@+id/tv_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_setting"
+                    android:layout_centerHorizontal="true"
+                    android:text="系统设置" />
+            </RelativeLayout>
+            <!-- 用户注册 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_register"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:id="@+id/iv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/register" />
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_register"
+                    android:layout_centerHorizontal="true"
+                    android:text="用户注册" />
+            </RelativeLayout>
+             <!-- 用户登录 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_login"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/iv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/login" />
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_login"
+                    android:layout_centerHorizontal="true"
+                    android:text="用户登录" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!-- 第4行结束 -->
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">植物百科</string>
+    <string name="action_settings">action_settings</string>
+    <string name="sm_exit">退出登录</string>
+    <string name="sm_setting">个人设置</string>
+    <string name="sm_upload">我的上传</string>
+    <string name="sm_ask">我的回答</string>
+    <string name="sm_question">我的问题</string>
+    <string name="sm_collect_plant">收藏的植物</string>
+    <string name="sm_follow_question">关注的问题</string>
+    <string name="send">发送</string>
+    <string name="ask_question">我要提问</string>
+    <string name="about">onekey是一款辅助软件，可以实现一键发送图文到多个社交平台（QQ空间，腾讯微博，新浪微博，微信朋友圈），方便社交达人快速的发布信息。</string>
+</resources>

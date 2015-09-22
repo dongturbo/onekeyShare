@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65.0dip"
+    android:id="@+id/rl_sm_question"
+    android:background="@drawable/sm_bg_selector" >
+
+    <TextView
+        android:id="@+id/tv_sm_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="21.0dip"
+        android:drawablePadding="20.0dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/sm_question"
+        android:textColor="#ffccccc6"
+        android:textSize="16.0sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_sm_question"
+        android:layout_width="25dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:contentDescription=""
+        android:src="@drawable/question" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 头像 -->
+
+    <com.xcz1899.onekey.view.RoundedImageView
+        android:id="@+id/riv_dialog_register_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:src="@drawable/default_img"
+        android:maxHeight="80dip"
+        android:maxWidth="80dip" />
+
+    <TextView
+        android:id="@+id/tv_dialog_login_register_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:gravity="left"
+        android:text="账号" />
+
+    <EditText
+        android:id="@+id/et_dialog_login_register_name"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:gravity="fill_horizontal"
+        android:scrollHorizontally="true" />
+
+    <TextView
+        android:id="@+id/tv_dialog_login_register_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:gravity="left"
+        android:text="密码" />
+
+    <EditText
+        android:id="@+id/et_dialog_login_register_password"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:gravity="fill_horizontal"
+        android:inputType="textPassword"
+        android:scrollHorizontally="true" />
+
+    <TextView
+        android:id="@+id/tv_dialog_register_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:gravity="left"
+        android:text="邮箱" />
+
+    <EditText
+        android:id="@+id/et_dialog_register_email"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:gravity="fill_horizontal"
+        android:inputType="textEmailAddress"
+        android:scrollHorizontally="true" />
+
+</LinearLayout>

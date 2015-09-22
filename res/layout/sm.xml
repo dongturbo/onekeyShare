@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sm_bg"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/layout_sliding_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 头部 -->
+
+        <include layout="@layout/sm_top" />
+
+        <!-- 我的上传 -->
+
+        <include layout="@layout/sm_upload" />
+        <!-- 我的问题 -->
+
+        <include layout="@layout/sm_question" />
+        <!-- 我的回答 -->
+
+        <include layout="@layout/sm_ask" />
+        <!-- 收藏的植物 -->
+
+        <include layout="@layout/sm_collect_plant" />
+        <!-- 关注的问题 -->
+
+        <include layout="@layout/sm_follow_question" />
+        <!-- 设置 -->
+
+        <include layout="@layout/sm_setting" />
+
+        <!-- 关于 -->
+
+        <include layout="@layout/sm_exit" />
+    </LinearLayout>
+
+</ScrollView>

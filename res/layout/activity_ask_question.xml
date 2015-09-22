@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical"
+        android:padding="0.0px" >
+
+        <ImageView
+            android:id="@+id/iv_main_titile_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/top_bg"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/ib_ask_question_left_button"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:src="@drawable/cancel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/ask_question"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ib_ask_question_right_login"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:gravity="center"
+            android:src="@drawable/ok" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_activity_top"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/et_ask_question_content"
+            android:lines="5"
+            android:layout_width="fill_parent"
+            android:hint="请输入您的问题描述" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/et_ask_question_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/IV_ask_question_im1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/add" />
+
+            <ImageView
+                android:id="@+id/IV_ask_question_im2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/add" />
+
+            <ImageView
+                android:id="@+id/IV_ask_question_im3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/add" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
